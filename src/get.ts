@@ -31,3 +31,12 @@ console.log(Str)
     let list:number[] = [1,2,3]
 //········使用泛型定义数组
     let list1:Array<number> = [1,2,3]
+
+// 5.元组 可以提前设置数组中的元素类型,数组中的元素类型可以是不同的，不必完全相同
+let x:[string,number]
+x = ['11',11]
+x = ['1111',11]
+
+// 6.枚举类型 枚举中的元素默认根据第一个元素自增，第一个元素默认编号为0
+enum Color {red,blue,}
+console.log(Color)

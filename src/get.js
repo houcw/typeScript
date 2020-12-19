@@ -21,3 +21,19 @@ var sentence = "Hello, my name is " + stuName;
 // 字符串拼接
 var Str = "Hello, my name is" + stuName + "\n" + "my age is" + age;
 console.log(Str);
+// 4.数组
+// ·······直接定义数组
+var list = [1, 2, 3];
+//········使用泛型定义数组
+var list1 = [1, 2, 3];
+// 5.元组 可以提前设置数组中的元素类型,数组中的元素类型可以是不同的，不必完全相同
+var x;
+x = ['11', 11];
+x = ['1111', 11];
+// 6.枚举类型 枚举中的元素默认根据第一个元素自增，第一个元素默认编号为0
+var Color;
+(function (Color) {
+    Color[Color["red"] = 0] = "red";
+    Color[Color["blue"] = 1] = "blue";
+})(Color || (Color = {}));
+console.log(Color);
