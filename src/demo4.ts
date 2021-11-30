@@ -2,7 +2,7 @@
  * @Description:
  * @Author: houcw
  * @Date: 2021-11-29 15:04:47
- * @LastEditTime: 2021-11-29 15:49:40
+ * @LastEditTime: 2021-11-29 16:16:17
  * @LastEditors: houcw
  * @Reference:
  */
@@ -39,3 +39,16 @@ class Girl{
 }
 
 console.log(Girl.sayHi());
+
+// 只读属性 readonly
+
+class man {
+    public readonly _name:string;
+    constructor(name:string){
+        this._name = name
+    }
+}
+
+const person = new man('nh')
+// 不能这样赋值，会报错 _name 是只读属性
+// person._name = 'ws'
